@@ -11,8 +11,8 @@
 html, body {
   margin: 0;
   padding:0;
-  overflow: hidden !important;
-/*  overflow-x: auto !important;*/
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
   overscroll-behavior: none;
 }
 
@@ -23,7 +23,7 @@ html, body {
 }
 
 .all-projects {
-  width: 927vw;
+  width: 518vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   padding: 0;

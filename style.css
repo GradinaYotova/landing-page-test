@@ -18,7 +18,7 @@ html, body {
 }
 
 .all-projects {
-  width: 404vw;
+  min-width: 206vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   padding: 0;
@@ -30,7 +30,7 @@ html, body {
   scroll-snap-align: start;
   position: relative;
   display: inline-block;
-  width: 150px;
+  width: 70px;
   min-block-height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   box-shadow: -2px 0px 8px #999;
@@ -41,7 +41,7 @@ html, body {
   position: relative;
   z-index: 1;
   margin: 0;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-family:Westmeath;
   color:#000;
   text-align: left;
@@ -73,7 +73,7 @@ html, body {
 
 
  .all-projects .project-spine.active {
-  width: 40vw;
+  width: 31vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   background: grey;
@@ -82,7 +82,7 @@ html, body {
 
 .all-projects .project-spine.active .title-text {
   padding-left: 10px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #eee;
   -webkit-transform: none;
   -moz-transform: none;
