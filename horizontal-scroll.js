@@ -16,3 +16,14 @@ if (window.addEventListener) {
   // IE 6/7/8
   window.attachEvent("onmousewheel", scrollHorizontally);
 }
+
+
+// On Click Open Modal 
+$( ".project-spine" ).each(function(index) {
+  $(this).on("click", function(){
+    console.log("click");
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+
+  });
+});
