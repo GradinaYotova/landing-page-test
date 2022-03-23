@@ -3,29 +3,50 @@
   src: url("./Westmeath.otf");
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; /
+}
+
 html, body {
   margin: 0;
   padding:0;
+  width:100vw;
   overflow: hidden !important;
-  overflow-x: auto !important;
+  overflow-x : scroll !important;
   overscroll-behavior: none;
 }
 
-.all-projects * {
+
+/*.all-projects * {
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+}*/
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position:fixed;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow-y: hidden !important;
+  overflow-x : scroll !important;
 }
 
 .all-projects {
-  min-width: 206vw;
+  width: auto;
   height: 100vh;
+   white-space: nowrap;
   height: calc(var(--vh, 1vh) * 100);
   padding: 0;
   margin:0;
   font-size: 1em;
-  box-shadow: 0 0 10px #333;
 }
+
 .project-spine {
   scroll-snap-align: start;
   position: relative;
@@ -67,9 +88,6 @@ html, body {
   display:none;
 }
 
-.title-textt {
-  display:none;
-}
 
 
  .all-projects .project-spine.active {
@@ -81,6 +99,11 @@ html, body {
 }
 
 .all-projects .project-spine.active .title-text {
+  display:block;
+  width:95%;
+  white-space: normal;
+  overflow: auto;
+  word-break: break-word;
   padding-left: 10px;
   font-size: 2.5rem;
   color: #eee;
@@ -90,20 +113,9 @@ html, body {
   margin:0;
 }
 
-.all-projects .project-spine.active .title-textt {
-  display:inline-block;
-  padding-left: 10px;
-  font-size: 3rem;
-  font-family:Westmeath;
-  color: #eee;
-  -webkit-transform: none;
-  -moz-transform: none;
-  transform: none;
-  margin:0;
-}
 
 .all-projects .project-spine.active .title-thesis {
-  display:inline-block;
+  display:block;
   font-family:Westmeath;
   padding-left: 10px;
   font-size: 2rem;
@@ -117,7 +129,10 @@ html, body {
 
 
 .all-projects .project-spine.active .abstract-text {
-  display:inline-block;
+  display:block;
+  white-space: normal;
+  overflow: auto;
+  word-break: break-all;
   padding-left: 10px;
   font-size: 1rem;
   color: #eee;
