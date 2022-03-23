@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Westmeath;
+  src: url("./Westmeath.otf");
+}
+
+html, body {
+  margin: 0;
+  padding:0;
+  overflow: hidden !important;
+}
+
+.all-projects * {
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.all-projects {
+  width: 240vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+/*  overflow-x: scroll;
+*/  padding: 0;
+  list-style: none;
+  font-size: 0;
+  box-shadow: 0 0 10px #333;
+}
+.project-spine {
+  position: relative;
+  display: inline-block;
+  width: 20vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  box-shadow: -2px 0px 8px #999;
+}
+
+#Petra{
+  background-image: url("https://kabk.github.io/go-theses-21/media/img/image_agata_markowska.jpg");
+  background-position: 30% 90%;
+  background-size: cover; 
+}
+
+
+
+
+
+.title-text {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 2rem;
+  font-family:Westmeath;
+  color:#FF1493;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 10% 120%;
+  -moz-transform-origin: 10% 120%;
+  transform-origin: 10% 120%;
+  white-space: nowrap;
+}
+
+.all-projects .project-spine:hover {
+  width: 40vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  background: grey;
+}
+
+.all-projects .project-spine:hover .title-text {
+  padding-left: 10px;
+  font-size: 0.5rem;
+  color: #eee;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
+
