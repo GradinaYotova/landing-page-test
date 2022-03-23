@@ -27,12 +27,14 @@ html, body {
   box-shadow: 0 0 10px #333;
 }
 .project-spine {
+  scroll-snap-align: start;
   position: relative;
   display: inline-block;
   width: 150px;
-  height: 100vh;
+  min-block-height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   box-shadow: -2px 0px 8px #999;
+  scroll-snap-stop: always;
 }
 
 .title-text {

@@ -12,7 +12,7 @@ html, body {
   margin: 0;
   padding:0;
   overflow: hidden !important;
-  overflow-x: auto !important;
+/*  overflow-x: auto !important;*/
   overscroll-behavior: none;
 }
 
@@ -34,7 +34,7 @@ html, body {
 .project-spine {
   position: relative;
   display: inline-block;
-  width: 100px;
+  width: 50px;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   box-shadow: -2px 0px 8px #999;
