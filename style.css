@@ -10,7 +10,7 @@
 
 html, body {
   overflow-y: hidden !important;
-  overflow-x : scroll !important;
+  overflow-x: hidden !important;
   overscroll-behavior: none;
   width:100vw;
   height: 100vh;
@@ -22,7 +22,7 @@ html, body {
 }
 
 .wrapper {
-  width: 102%;
+  width: 101%;
   height: 100%;
   height: calc(var(--vh, 1vh) * 100);
   position:fixed;
