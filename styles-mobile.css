@@ -1,8 +1,8 @@
 @media screen and (max-width: 844px) {
 
 @font-face {
-  font-family: Westmeath;
-  src: url("./Westmeath.otf");
+  font-family: SpaceGrotesk;
+  src: url("fonts/SpaceGrotesk.ttf");
 }
 
 *::-webkit-scrollbar {display: none;}
@@ -67,11 +67,11 @@ html, body {
   z-index: 1;
   margin: 0;
   font-size: 1.5rem;
-  font-family:Westmeath;
+  font-family:SpaceGrotesk;
   color:#000;
   text-align: left;
   white-space: nowrap;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   transform: rotate(90deg);
