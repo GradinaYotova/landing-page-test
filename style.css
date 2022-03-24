@@ -36,7 +36,8 @@ html, body {
   height: 100%;
   padding: 0;
   margin:0;
-   white-space: nowrap;
+  white-space: nowrap;
+  overscroll-behavior: none;
 }
 
 .project-spine {
