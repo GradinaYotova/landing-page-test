@@ -5,49 +5,56 @@
   src: url("./Westmeath.otf");
 }
 
-*::-webkit-scrollbar {
-  display: none;
-}
+*::-webkit-scrollbar {display: none;}
 
-* {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; /
-}
+* {-ms-overflow-style: none; scrollbar-width: none;}
 
 html, body {
-  margin: 0;
-  padding:0;
   overflow-y: hidden !important;
   overflow-x : scroll !important;
   overscroll-behavior: none;
+  width:100vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0;
+  padding:0;
+  background: rgb(153,255,204);
+  background: linear-gradient(264deg, rgba(153,255,204,1) 0%, rgba(204,153,255,1) 100%);
 }
 
 .wrapper {
-  width: 100vw;
-  height: 100vh;
-  position:fixed;
+  width: 102%;
+  height: 100%;
   height: calc(var(--vh, 1vh) * 100);
+  position:fixed;
   overflow-y: hidden !important;
   overflow-x : scroll !important;
 }
 
 .all-projects {
   width: auto;
-  height: 100vh;
-  white-space: nowrap;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 100%;
   padding: 0;
   margin:0;
-  font-size: 1em;
+  white-space: nowrap;
 }
 
 .project-spine {
-  position: relative;
   display: inline-block;
+  position: relative;
   width: 50px;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 100%;
+  background: #f4f0ec;
   box-shadow: -2px 0px 8px #999;
+
+}
+
+.project-spine-content {
+  display: inline-block;
+  position: relative;
+  width: 95%;
+  height: auto;
+  padding:0.5em;
 }
 
 .title-text {
@@ -58,6 +65,7 @@ html, body {
   font-family:Westmeath;
   color:#000;
   text-align: left;
+  white-space: nowrap;
   text-transform: uppercase;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -65,82 +73,47 @@ html, body {
   -webkit-transform-origin: 10% 120%;
   -moz-transform-origin: 10% 120%;
   transform-origin: 10% 120%;
-  white-space: nowrap;
 }
 
 .abstract-text {
   display:none;
 }
 
-.title-thesis {
-  display:none;
-}
- 
-.close {
-  display:none;
-}
 
- .all-projects .project-spine.active {
+.all-projects .project-spine.active {
   width: 60vw;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  background: grey;
+  height: 100%;
+  background: #bfc1c2;
   margin:0;
 }
 
 .all-projects .project-spine.active .title-text {
+  display:block;
   width:95%;
-  white-space: normal;
+  margin:0;
   overflow: auto;
   word-break: break-word;
-  display:block;
+  white-space: normal;
   padding-left: 10px;
-  font-size: 1.5rem;
-  color: #eee;
+  font-size: 1rem;
+  color: #000;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
-  margin:0;
 }
-
-
-.all-projects .project-spine.active .title-thesis {
-  display:block;
-  font-family:Westmeath;
-  padding-left: 10px;
-  font-size: 2rem;
-  color: #eee;
-  -webkit-transform: none;
-  -moz-transform: none;
-  transform: none;
-  margin:0;
-}
-
-
 
 .all-projects .project-spine.active .abstract-text {
   display:inline-block;
-  white-space: normal;
+  margin:0;
+  width:95%;
   overflow: auto;
-  word-break: break-all;
+  white-space: normal;
+  word-break: break-word;
   font-size: 1rem;
-  color: #eee;
+  color: #000;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
-  margin:0;
 }
-
-.all-projects .project-spine.active .close {
-  display:block;
-  padding-left: 10px;
-  font-size: 2rem;
-  color: #eee;
-  -webkit-transform: none;
-  -moz-transform: none;
-  transform: none;
-  margin:0;
-}
-
 
 }
