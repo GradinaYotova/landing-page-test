@@ -82,6 +82,10 @@ html, body {
   display:none;
 }
 
+.project-spine-img{
+  display:none;
+}
+
  .all-projects .project-spine.active {
   width: 31vw;
   height: 100vh;
@@ -91,6 +95,12 @@ html, body {
   background: #bfc1c2;
   margin:0;
 
+}
+
+ .all-projects .project-spine.active .project-spine-img {
+  display:block;
+  width: 50%;
+  height: auto;
 }
 
 .all-projects .project-spine.active .title-text {
