@@ -12,6 +12,7 @@ html, body {
   overflow-y: hidden !important;
   overflow-x: hidden !important;
   overscroll-behavior: none;
+  overscroll-behavior-x: none;
   width:100vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
@@ -29,6 +30,7 @@ html, body {
   overflow-y: hidden !important;
   overflow-x : scroll !important;
   overscroll-behavior: none;
+  overscroll-behavior-x: none;
 }
 
 .all-projects {
@@ -38,6 +40,7 @@ html, body {
   margin:0;
   white-space: nowrap;
   overscroll-behavior: none;
+  overscroll-behavior-x: none;
 }
 
 .project-spine {
