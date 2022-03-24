@@ -86,8 +86,11 @@ html, body {
   width: 31vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  overscroll-behavior: none;
+  overscroll-behavior-x: none;
   background: #bfc1c2;
   margin:0;
+
 }
 
 .all-projects .project-spine.active .title-text {
