@@ -29,6 +29,7 @@ html, body {
   position:fixed;
   overflow-y: hidden !important;
   overflow-x : scroll !important;
+  overscroll-behavior: none;
 }
 
 .all-projects {
