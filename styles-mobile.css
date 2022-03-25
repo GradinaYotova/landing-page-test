@@ -35,7 +35,7 @@ html, body {
 }
 
 .all-projects {
-  width: 85%;
+  width: 90%;
   display: block;
   margin: 0 auto;
   height: 100%;
@@ -67,7 +67,7 @@ html, body {
   position: relative;
   z-index: 1;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding:0.7em;
   font-family:SpaceGrotesk;
   color:#000;
