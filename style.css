@@ -71,7 +71,6 @@ html, body {
   color:#000;
   text-align: left;
   white-space: nowrap;
-/*  text-transform: uppercase;*/
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   transform: rotate(90deg);
