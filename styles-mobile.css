@@ -10,7 +10,7 @@
 * {-ms-overflow-style: none; scrollbar-width: none;}
 
 html, body {
-  overflow-y: hidden !important;
+  overflow-y: scroll !important;
   overflow-x: hidden !important;
   overscroll-behavior: none;
   overscroll-behavior-x: none;
@@ -28,7 +28,7 @@ html, body {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position:fixed;
-  overflow-y: hidden !important;
+  overflow-y: scroll !important;
   overflow-x : scroll !important;
   overscroll-behavior: none;
   overscroll-behavior-x: none;
@@ -45,10 +45,10 @@ html, body {
 }
 
 .project-spine {
-  display: inline-block;
+  display: block;
   position: relative;
-  width: 50px;
-  height: 100%;
+  width: 100%;
+  height: 60px;
   background: #f4f0ec;
   box-shadow: -2px 0px 8px #999;
 
@@ -66,15 +66,16 @@ html, body {
   position: relative;
   z-index: 1;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding:0.7em;
   font-family:SpaceGrotesk;
   color:#000;
   text-align: left;
   white-space: nowrap;
 /*  text-transform: uppercase;*/
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
   -webkit-transform-origin: 10% 120%;
   -moz-transform-origin: 10% 120%;
   transform-origin: 10% 120%;
@@ -89,9 +90,9 @@ html, body {
 }
 
 .all-projects .project-spine.active {
-  width: 70vw;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+  height: 50vh;
+/*  height: calc(var(--vh, 1vh) * 100);*/
   overscroll-behavior: none;
   overscroll-behavior-x: none;
   background: #bfc1c2;
