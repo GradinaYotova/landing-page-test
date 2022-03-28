@@ -29,7 +29,7 @@ html, body {
 .wrapper {
   width: 101%;
   height: 100vh;
-/*  height: calc(var(--vh, 1vh) * 100);*/
+  height: calc(var(--vh, 1vh) * 100);
   position:fixed;
   overflow-y: hidden !important;
   overflow-x : scroll !important;
@@ -118,7 +118,6 @@ html, body {
 .all-projects .project-spine.active {
   width: 25vw;
   height: 100vh;
-/*  height: calc(var(--vh, 1vh) * 100);*/
   overscroll-behavior: none;
   overscroll-behavior-x: none;
   background: #00FF7F;
@@ -204,7 +203,6 @@ text-decoration:underline;
   height: 100vh;
   display:inline-block;
   vertical-align:bottom;
-/*  height: calc(var(--vh, 1vh) * 100);*/
   overscroll-behavior: none;
   overscroll-behavior-x: none;
   background: #6495ED;
