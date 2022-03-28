@@ -99,6 +99,22 @@ html, body {
   display:none;
 }
 
+
+.project-spine:hover{
+  background: #00FF7F;
+}
+
+.project-spine:hover .title-text{
+  color: #fff;
+}
+
+
+/*.project-spine:hover #fleur::after{
+   content: " / Fleurine Brijker";
+}*/
+
+
+
 .all-projects .project-spine.active {
   width: 25vw;
   height: 100vh;
@@ -107,6 +123,7 @@ html, body {
   overscroll-behavior-x: none;
   background: #00FF7F;
   margin:0;
+  pointer-events:none;
 }
 
  .all-projects .project-spine.active .project-spine-img {
@@ -117,7 +134,7 @@ html, body {
 
 .all-projects .project-spine.active .title-text {
   display:block;
-  width:95%;
+  width:80%;
   margin:0;
   overflow: auto;
   word-break: break-word;
@@ -174,6 +191,7 @@ html, body {
   -moz-transform: none;
   transform: none;
   text-decoration:none;
+  pointer-events:auto;
 }
 
 .all-projects .project-spine.active .url:hover {
