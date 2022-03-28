@@ -3,11 +3,8 @@
   src: url("fonts/SpaceGrotesk.ttf");
 }
 
-
 *::-webkit-scrollbar {display: none;}
-
 * {-ms-overflow-style: none; scrollbar-width: none;}
-
 
 html, body {
   overflow-y: hidden !important;
@@ -17,7 +14,6 @@ html, body {
   width:100vw;
   height: 100vh;
   position:fixed;
-/*  height: calc(var(--vh, 1vh) * 100);*/
   margin: 0;
   padding:0;
   background: rgb(153,255,204);
@@ -88,7 +84,7 @@ html, body {
   display:none;
 }
 
- .all-projects .project-spine.active {
+.all-projects .project-spine.active {
   width: 31vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
@@ -96,7 +92,6 @@ html, body {
   overscroll-behavior-x: none;
   background: #bfc1c2;
   margin:0;
-
 }
 
  .all-projects .project-spine.active .project-spine-img {

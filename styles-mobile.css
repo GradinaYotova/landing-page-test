@@ -6,7 +6,6 @@
 }
 
 *::-webkit-scrollbar {display: none;}
-
 * {-ms-overflow-style: none; scrollbar-width: none;}
 
 html, body {
@@ -17,8 +16,8 @@ html, body {
   width:100vw;
   height: 100vh;
   position:fixed;
-/*  height: calc(var(--vh, 1vh) * 100);*/
   margin: 0;
+    margin-bottom:0;
   padding:0;
   background: #f4f0ec;
 }
@@ -36,10 +35,9 @@ html, body {
 
 .all-projects {
   width: 100%;
-  display: block;
-  margin: 0 auto;
-  height: 100%;
+  height: auto;
   padding: 0;
+  margin:0;
   white-space: nowrap;
   overscroll-behavior: none;
   overscroll-behavior-x: none;
@@ -98,7 +96,7 @@ html, body {
   margin:0;
 }
 
- .all-projects .project-spine.active .project-spine-img {
+.all-projects .project-spine.active .project-spine-img {
   display:block;
   width: 50%;
   height: auto;
