@@ -4,7 +4,14 @@
 }
 
 *::-webkit-scrollbar {display: none;}
-* {-ms-overflow-style: none; scrollbar-width: none;}
+* {-ms-overflow-style: none;
+    scrollbar-width: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;}
 
 html, body {
   overflow-y: hidden !important;
@@ -16,8 +23,7 @@ html, body {
   position:fixed;
   margin: 0;
   padding:0;
-  background: rgb(153,255,204);
-  background: linear-gradient(264deg, rgba(153,255,204,1) 0%, rgba(204,153,255,1) 100%);
+  background: #f4f0ec;
 }
 
 .wrapper {
@@ -43,6 +49,7 @@ html, body {
 
 .project-spine {
   display: inline-block;
+  vertical-align:bottom;
   position: relative;
   width: 70px;
   height: 100%;
@@ -80,17 +87,25 @@ html, body {
   display:none;
 }
 
+.student-name {
+  display:none;
+}
+
+.url {
+  display:none;
+}
+
 .project-spine-img{
   display:none;
 }
 
 .all-projects .project-spine.active {
-  width: 31vw;
+  width: 25vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   overscroll-behavior: none;
   overscroll-behavior-x: none;
-  background: #bfc1c2;
+  background: #00FF7F;
   margin:0;
 }
 
@@ -109,7 +124,7 @@ html, body {
   white-space: normal;
   padding: 10px;
   font-size: 1.5rem;
-  color: #000;
+  color: #fff;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
@@ -124,7 +139,91 @@ html, body {
   word-break: break-word;
   font-size: 1rem;
   font-family:SpaceGrotesk;
-  color: #000;
+  color: #fff;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
+
+.all-projects .project-spine.active .student-name {
+  display:block;
+  margin:0;
+  width:95%;
+  overflow: auto;
+  white-space: normal;
+  word-break: break-word;
+  font-size: 1rem;
+  font-family:SpaceGrotesk;
+  color: #fff;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
+
+.all-projects .project-spine.active .url {
+  display:block;
+  margin:0;
+  width:95%;
+  overflow: auto;
+  white-space: normal;
+  word-break: break-word;
+  font-size: 1rem;
+  font-family:SpaceGrotesk;
+  color: #fff;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  text-decoration:none;
+}
+
+.all-projects .project-spine.active .url:hover {
+text-decoration:underline;
+}
+
+
+.all-projects .project-spine-always-active {
+  width: 25vw;
+  height: 100vh;
+  display:inline-block;
+  vertical-align:bottom;
+  height: calc(var(--vh, 1vh) * 100);
+  overscroll-behavior: none;
+  overscroll-behavior-x: none;
+  background: #6495ED;
+  margin:0;
+}
+
+ .all-projects .project-spine-always-active .project-spine-img {
+  display:block;
+  width: 50%;
+  height: auto;
+}
+
+.all-projects .project-spine-always-active .title-text {
+  display:block;
+  width:95%;
+  margin:0;
+  overflow: auto;
+  word-break: break-word;
+  white-space: normal;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
+
+.all-projects .project-spine-always-active .abstract-text {
+  display:inline-block;
+  margin:0;
+  width:95%;
+  overflow: auto;
+  white-space: normal;
+  word-break: break-word;
+  font-size: 1rem;
+  font-family:SpaceGrotesk;
+  color: #fff;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
