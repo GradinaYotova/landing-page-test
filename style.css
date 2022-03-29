@@ -101,7 +101,8 @@ html, body {
 
 
 .project-spine:hover{
-  background: #00FF7F;
+background: rgb(87,251,159);
+background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 100%);
 }
 
 .project-spine:hover .title-text{
@@ -115,7 +116,8 @@ html, body {
   height: calc(var(--vh, 1vh) * 100);
   overscroll-behavior: none;
   overscroll-behavior-x: none;
-  background: #00FF7F;
+  background: rgb(87,251,159);
+  background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 100%);
   margin:0;
   pointer-events:none;
 }
@@ -201,7 +203,7 @@ text-decoration:underline;
   height: calc(var(--vh, 1vh) * 100);
   overscroll-behavior: none;
   overscroll-behavior-x: none;
-  background: #6495ED;
+  background: #6869e0;
   margin:0;
 }
 
