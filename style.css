@@ -109,15 +109,10 @@ html, body {
 }
 
 
-/*.project-spine:hover #fleur::after{
-   content: " / Fleurine Brijker";
-}*/
-
-
-
 .all-projects .project-spine.active {
   width: 25vw;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overscroll-behavior: none;
   overscroll-behavior-x: none;
   background: #00FF7F;
@@ -203,6 +198,7 @@ text-decoration:underline;
   height: 100vh;
   display:inline-block;
   vertical-align:bottom;
+  height: calc(var(--vh, 1vh) * 100);
   overscroll-behavior: none;
   overscroll-behavior-x: none;
   background: #6495ED;
