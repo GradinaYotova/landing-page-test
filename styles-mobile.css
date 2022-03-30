@@ -46,8 +46,6 @@
     padding: 0;
     margin:0;
     white-space: nowrap;
-    overscroll-behavior: none;
-    overscroll-behavior-x: none;
     overflow-x:hidden !important;
   }
 
@@ -56,8 +54,6 @@
     position: relative;
     width: 100%;
     height: 60px;
-    /* box-shadow: -2px 0px 8px #999;
-    padding: 5px 0; */
     border: 1px solid black;
 
   }
@@ -80,12 +76,6 @@
     color:#000;
     text-align: left;
     white-space: nowrap;
-    /* -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transform-origin: 10% 120%;
-    -moz-transform-origin: 10% 120%;
-    transform-origin: 10% 120%; */
     writing-mode: horizontal-tb;
     width: 100%;
     box-sizing: border-box;
@@ -97,44 +87,17 @@
     display:none;
   }
 
-  /* .student-name{
-    display:none;
-  } */
-
-  .project-spine-img{
-    display:none;
-  }
-
   .project-spine:hover{
     background: #f4f0ec;
   }
 
-  /* .project-spine:hover .title-text{
-    color: #000;
-  } */
-
   .all-projects .project-spine.active {
     width: 100%;
-    /* height: 30vh; */
     height: auto;
     overscroll-behavior: none;
     overscroll-behavior-x: none;
-    /* background: rgb(87,251,159); */
-    /* background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 100%); */
     background-color: #000;
     margin:0;
-  }
-
-  #fleur {
-    pointer-events:initial;
-  }
-
-
-
-  .all-projects .project-spine.active .project-spine-img {
-    display:block;
-    width: 50%;
-    height: auto;
   }
 
   .all-projects .project-spine.active .title-text {
@@ -167,7 +130,6 @@
     transform: none;
   }
 
-
   .all-projects .project-spine.active .student-name {
     display:block;
     margin:0;
@@ -185,12 +147,9 @@
   .all-projects .project-spine-always-active {
     width: 100%;
     height: 30vh;
-    overscroll-behavior: none;
-    overscroll-behavior-x: none;
     background: #6869e0;
     margin:0;
   }
-
 
   .all-projects .project-spine-always-active .title-text {
     display:block;
@@ -233,5 +192,3 @@
   }
 
 }
-
-
