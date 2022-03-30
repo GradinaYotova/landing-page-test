@@ -163,7 +163,7 @@
 
   .all-projects .project-spine-always-active .abstract-text {
     display:inline-block;
-    margin-top: 4rem;
+    margin: 0rem;
     width:85%;
     overflow: auto;
     white-space: normal;
@@ -175,9 +175,6 @@
     transform: none;
   }
 
-  #one{
-    margin-top: 6rem;
-  }
   .active-desktop{
     display: none !important;
   }
