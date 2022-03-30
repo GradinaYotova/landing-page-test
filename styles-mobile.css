@@ -200,7 +200,7 @@
     word-break: break-word;
     white-space: normal;
     padding-left: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #fff;
     -webkit-transform: none;
     -moz-transform: none;
@@ -214,11 +214,15 @@
     overflow: auto;
     white-space: normal;
     word-break: break-word;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #fff;
     -webkit-transform: none;
     -moz-transform: none;
     transform: none;
+  }
+
+  #one{
+    margin-top: 6rem;
   }
   .active-desktop{
     display: none !important;
