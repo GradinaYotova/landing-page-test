@@ -24,7 +24,7 @@
     height: 100vh;
     position:fixed;
     margin: 0;
-      margin-bottom:0;
+    margin-bottom:0;
     padding:0;
     background: #f4f0ec;
   }
@@ -36,8 +36,8 @@
     position:fixed;
     overflow-y: scroll !important;
     overflow-x : hidden !important;
-    overscroll-behavior: none;
-    overscroll-behavior-x: none;
+/*    overscroll-behavior: none;
+    overscroll-behavior-x: none;*/
   }
 
   .all-projects {
@@ -94,8 +94,8 @@
   .all-projects .project-spine.active {
     width: 100%;
     height: auto;
-    overscroll-behavior: none;
-    overscroll-behavior-x: none;
+/*    overscroll-behavior: none;
+    overscroll-behavior-x: none;*/
     background-color: #000;
     margin:0;
   }
