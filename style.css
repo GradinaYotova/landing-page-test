@@ -51,36 +51,60 @@ html, body {
   display: inline-block;
   vertical-align:bottom;
   position: relative;
-  width: 70px;
+  width: 4rem;
   height: 100%;
   background: #f4f0ec;
   box-shadow: -2px 0px 8px #999;
+  cursor: pointer;
 }
 
 .project-spine-content {
   display: inline-block;
   position: relative;
-  width: 95%;
+  width: 75%;
   height: auto;
   padding:0.5em;
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+  position: relative;
+  height: 100vh;
 }
 
 .title-text {
   position: relative;
   z-index: 1;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   padding:0;
   font-family:SpaceGrotesk;
   color:#000;
   text-align: left;
   white-space: nowrap;
-  -webkit-transform: rotate(90deg);
+  /* height: 100%; */
+  /* -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   transform: rotate(90deg);
   -webkit-transform-origin: 10% 120%;
   -moz-transform-origin: 10% 120%;
-  transform-origin: 10% 120%;
+  transform-origin: 10% 120%; */
+  writing-mode: vertical-lr;
+}
+
+.marquee-up, .marquee-down{
+  display: inline-block;
+  vertical-align:bottom;
+  position: relative;
+  width: 4rem;
+  height: 100%;
+  background: #f4f0ec;
+  cursor: pointer;
+}
+
+.marquee-up:hover, .marquee-down:hover{
+  background: #000;
+  color: #fff !important;
+
 }
 
 .abstract-text {
@@ -101,13 +125,13 @@ html, body {
 
 
 .project-spine:hover{
-background: rgb(87,251,159);
-background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 100%);
+  background-color: #000;
+/* background: rgb(87,251,159); */
+/* background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 100%); */
 }
-
 .project-spine:hover .title-text{
-  color: #fff;
-}
+  color: #000;
+} 
 
 
 .all-projects .project-spine.active {
@@ -116,11 +140,13 @@ background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 1
   height: calc(var(--vh, 1vh) * 100);
   overscroll-behavior: none;
   overscroll-behavior-x: none;
-  background: rgb(87,251,159);
-  background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 100%);
+  /* background: rgb(87,251,159); */
+  /* background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 100%); */
   margin:0;
   pointer-events:none;
+  background-color: #000;
 }
+
 
  .all-projects .project-spine.active .project-spine-img {
   display:block;
@@ -141,6 +167,7 @@ background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 1
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
+  background-color: transparent;
 }
 
 .all-projects .project-spine.active .abstract-text {
@@ -156,6 +183,8 @@ background: radial-gradient(circle, rgba(87,251,159,1) 0%, rgba(104,105,224,1) 1
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
+  z-index: 11;
+  position: relative;
 }
 
 .all-projects .project-spine.active .student-name {
@@ -241,4 +270,43 @@ text-decoration:underline;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
+}
+
+
+.block-link{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.project-spine .div-name{
+    /* display: none;   */
+    display: block;
+    opacity: 0;
+}
+
+.project-spine .div-name.active{
+  /* display: none;   */
+  /* display: block; */
+  opacity: 1;
+}
+@media screen and (min-width: 845px) {
+.active-desktop{
+  display: initial !important;
+}
+
+.active-mobile{
+  display: none !important;
+}
+}
+
+.div-name{
+  position: absolute;
+}
+
+.block-link{
+  height: 100%;
 }
