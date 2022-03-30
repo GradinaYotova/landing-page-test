@@ -16,8 +16,8 @@
 html, body {
   overflow-y: hidden !important;
   overflow-x: hidden !important;
-  overscroll-behavior: none;
-  overscroll-behavior-x: none;
+/*  overscroll-behavior: none;
+  overscroll-behavior-x: none;*/
   width:100vw;
   height: 100vh;
   position:fixed;
