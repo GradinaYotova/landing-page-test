@@ -32,7 +32,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         , //on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
         pauseOnHover: false
         , //the marquee is visible initially positioned next to the border towards it will be moving
-        startVisible: true
+        startVisible: false
       });
   });
   
@@ -62,7 +62,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         , //on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
         pauseOnHover: false
         , //the marquee is visible initially positioned next to the border towards it will be moving
-        startVisible: true
+        startVisible: false
       });
   });
 
@@ -94,7 +94,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
           , //on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
           pauseOnHover: false
           , //the marquee is visible initially positioned next to the border towards it will be moving
-          startVisible: true
+          startVisible: false
         });
     });
 
@@ -122,7 +122,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         , //on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
         pauseOnHover: false
         , //the marquee is visible initially positioned next to the border towards it will be moving
-        startVisible: true
+        startVisible: false
       });
     });
 
@@ -152,7 +152,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             , //on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
             pauseOnHover: false
             , //the marquee is visible initially positioned next to the border towards it will be moving
-            startVisible: true
+            startVisible: false
           });
     });
 
