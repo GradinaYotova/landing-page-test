@@ -51,7 +51,7 @@
     position: relative;
     width: 100%;
     height: 60px;
-    border: 1px solid black;
+    filter:drop-shadow(0rem 0px 1.25rem #808080);
 
   }
 
@@ -80,6 +80,7 @@
     left: 0;
   }
 
+
   .abstract-text {
     display:none;
   }
@@ -96,7 +97,7 @@
   }
 
   .all-projects .project-spine.active .title-text {
-    display:block;
+    display:none;
     width:95%;
     margin:0;
     overflow: auto;
@@ -142,8 +143,9 @@
   .all-projects .project-spine-always-active {
     width: 100%;
     height: 30vh;
-    background: #6869e0;
+    background: #DCDCDC;
     margin:0;
+    filter:drop-shadow(0rem 0px 1.25rem #808080);
   }
 
   .all-projects .project-spine-always-active .title-text {
@@ -155,7 +157,7 @@
     white-space: normal;
     padding-left: 10px;
     font-size: 1.5rem;
-    color: #fff;
+    color: #000;
     -webkit-transform: none;
     -moz-transform: none;
     transform: none;
@@ -170,11 +172,20 @@
     white-space: normal;
     word-break: break-word;
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     -webkit-transform: none;
     -moz-transform: none;
     transform: none;
   }
+
+.all-projects .project-spine-always-active .project-spine-content {
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    height: auto;
+    padding:0.5em;
+}
+ 
 
   #one{
     padding-top: 80px; 

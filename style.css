@@ -23,7 +23,7 @@ html, body {
   height: calc(var(--vh, 1vh) * 100);
   margin: 0;
   padding:0;
-  background: #f4f0ec;
+  background: #DCDCDC;
 }
 
 .wrapper {
@@ -49,7 +49,8 @@ html, body {
   width: 4rem;
   height: 100%;
   background: #f4f0ec;
-  box-shadow: -2px 0px 8px #999;
+/*  box-shadow: -2px 0px 8px #999;*/
+  filter:drop-shadow(-2rem 0px 1.25rem #808080);
   cursor: pointer;
 }
 
@@ -60,7 +61,7 @@ html, body {
   height: auto;
   padding:0.5em;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 1.5em;
   display: block;
   position: relative;
   height: 100vh;
@@ -70,7 +71,7 @@ html, body {
   position: relative;
   z-index: 1;
   margin: 0;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   padding:0;
   font-family:SpaceGrotesk;
   color:#000;
@@ -82,10 +83,10 @@ html, body {
 .marquee-up, .marquee-down{
   display: inline-block;
   vertical-align:bottom;
-  position: relative;
+  position: absolute;
   width: 4rem;
   height: 100%;
-  background: #f4f0ec;
+  background: #DCDCDC;
   cursor: pointer;
 }
 
@@ -169,6 +170,7 @@ html, body {
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
+  display:none;
 }
 
 .all-projects .project-spine.active .url {
@@ -189,7 +191,8 @@ html, body {
 }
 
 .all-projects .project-spine.active .url:hover {
-text-decoration:underline;
+  text-decoration:underline;
+  pointer-events:auto;
 }
 
 
@@ -199,8 +202,9 @@ text-decoration:underline;
   display:inline-block;
   vertical-align:bottom;
   height: calc(var(--vh, 1vh) * 100);
-  background: #6869e0;
+  background: #DCDCDC;
   margin:0;
+  filter:drop-shadow(-2rem 0px 1.25rem #808080);
 }
 
 .all-projects .project-spine-always-active .title-text {
@@ -212,7 +216,7 @@ text-decoration:underline;
   white-space: normal;
   padding: 10px;
   font-size: 1.5rem;
-  color: #fff;
+  color: #000;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
@@ -227,11 +231,26 @@ text-decoration:underline;
   word-break: break-word;
   font-size: 1rem;
   font-family:SpaceGrotesk;
-  color: #fff;
+  color: #000;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
 }
+
+.all-projects .project-spine-always-active .project-spine-content {
+  display: inline-block;
+  position: relative;
+  width: 75%;
+  height: auto;
+  padding:0.5em;
+  margin-left: auto;
+  margin-right: 0em;
+  display: block;
+  position: relative;
+  height: 100vh;
+}
+
+
 
 .block-link{
   height: 100vh;

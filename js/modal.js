@@ -24,7 +24,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         , //true or false - should the marquee be duplicated to show an effect of continues flow
         duplicated: false
         , //speed in milliseconds of the marquee in milliseconds
-        duration: 6000
+        duration: 8000
         , //gap in pixels between the tickers
         gap: 0
         , //on cycle pause the marquee
@@ -54,7 +54,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         , //true or false - should the marquee be duplicated to show an effect of continues flow
         duplicated: false
         , //speed in milliseconds of the marquee in milliseconds
-        duration: 6000
+        duration: 8000
         , //gap in pixels between the tickers
         gap: 0
         , //on cycle pause the marquee
@@ -86,7 +86,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
           , //true or false - should the marquee be duplicated to show an effect of continues flow
           duplicated: false
           , //speed in milliseconds of the marquee in milliseconds
-          duration: 6000
+          duration: 8000
           , //gap in pixels between the tickers
           gap: 0
           , //on cycle pause the marquee
@@ -114,7 +114,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         , //true or false - should the marquee be duplicated to show an effect of continues flow
         duplicated: false
         , //speed in milliseconds of the marquee in milliseconds
-        duration: 6000
+        duration: 8000
         , //gap in pixels between the tickers
         gap: 0
         , //on cycle pause the marquee
@@ -144,7 +144,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             , //true or false - should the marquee be duplicated to show an effect of continues flow
             duplicated: false
             , //speed in milliseconds of the marquee in milliseconds
-            duration: 6000
+            duration: 8000
             , //gap in pixels between the tickers
             gap: 0
             , //on cycle pause the marquee
