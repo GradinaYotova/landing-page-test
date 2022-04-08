@@ -145,8 +145,7 @@
     height: 30vh;
     background: #DCDCDC;
     margin:0;
-    filter:drop-shadow(0rem 0px 1.25rem #808080);
-    z-index:3;
+    filter:drop-shadow(0rem 0px 0em #808080);
   }
 
   .all-projects .project-spine-always-active .title-text {
