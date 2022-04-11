@@ -168,7 +168,6 @@ html, body {
   display:inline-block;
   margin:0;
   width:95%;
-  overflow: auto;
   white-space: normal;
   word-break: break-word;
   font-size: 1rem;
@@ -177,8 +176,6 @@ html, body {
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
-  z-index: 11;
-  position: relative;
 }
 
 .all-projects .project-spine.active .student-name {
