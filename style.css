@@ -40,17 +40,19 @@ html, body {
   padding: 0;
   margin:0;
   white-space: nowrap;
+  font-size:0;
 }
 
 .project-spine {
   display: inline-block;
   vertical-align:bottom;
   position: relative;
-  width: 4rem;
-  height: 100%;
-  background: #f4f0ec;
-/*  box-shadow: -2px 0px 8px #999;*/
-  filter:drop-shadow(-2rem 0px 1.25rem #808080);
+  z-index: 10;
+  width:  4rem;
+  height: 100vh;
+  background: #DCDCDC;
+  -webkit-filter:drop-shadow(-2rem 0px 1.25rem #808080);
+  filter:drop-shadow(-2rem 0px 1.25rem #808080); 
   cursor: pointer;
 }
 
@@ -65,6 +67,9 @@ html, body {
   display: block;
   position: relative;
   height: 100vh;
+  position: absolute;
+  right: 0;
+  top:0;
 }
 
 .title-text {
@@ -76,23 +81,45 @@ html, body {
   font-family:SpaceGrotesk;
   color:#000;
   text-align: left;
-  white-space: nowrap;
+  line-height:1.5;
+  /* white-space: nowrap;
+  writing-mode: vertical-lr; */
+
+}
+
+#vertical-title{
   writing-mode: vertical-lr;
+}
+
+.vert{
+  transform: translateY(-100%) rotate(90deg);
+  transform-origin: center;
+  transform-origin: top left;
+  object-fit: cover;
+  z-index: 100;
+  transform-origin: 0% 100%;
+  width: 100vh;
+  height: 4rem;
+  position:absolute;
+  z-index:100;
 }
 
 .marquee-up, .marquee-down{
   display: inline-block;
   vertical-align:bottom;
-  position: absolute;
-  width: 4rem;
-  height: 100%;
-  background: #DCDCDC;
+  /* position: absolute; */
+  /* width: 4rem;
+  height: 100%; */
+  /* background: #DCDCDC;
+   */
   cursor: pointer;
+  width: 100vh;
+height: 4rem;
 }
 
 .marquee-up:hover, .marquee-down:hover{
-  background: #000;
-  color: #fff !important;
+  /* background: #000; */
+  /* color: #fff !important; */
 
 }
 
@@ -109,10 +136,10 @@ html, body {
 }
 
 .project-spine:hover{
-  background-color: #000;
+   background-color: #000; 
 }
 .project-spine:hover .title-text{
-  color: #000;
+  color: #fff;
 } 
 
 .all-projects .project-spine.active {
@@ -133,6 +160,7 @@ html, body {
   white-space: normal;
   padding: 10px;
   font-size: 1.5rem;
+  line-height:1.3;
   color: #fff;
   -webkit-transform: none;
   -moz-transform: none;
@@ -200,18 +228,32 @@ html, body {
   width: 25vw;
   height: 100vh;
   display:inline-block;
+  position:relative;
+  z-index:100;
   vertical-align:bottom;
   height: calc(var(--vh, 1vh) * 100);
   background: #DCDCDC;
   margin:0;
+  -webkit-filter:drop-shadow(-2rem 0px 1.25rem #808080);
   filter:drop-shadow(-2rem 0px 1.25rem #808080);
+}
+
+#first {
+  width: 25vw;
+  height: 100vh;
+  display:inline-block;
+  position:relative;
+  z-index:10;
+  vertical-align:bottom;
+  height: calc(var(--vh, 1vh) * 100);
+  background: #DCDCDC;
+  margin:0;
 }
 
 .all-projects .project-spine-always-active .title-text {
   display:block;
   width:95%;
   margin:0;
-/*  overflow: auto;*/
   word-break: break-word;
   white-space: normal;
   padding: 10px;
@@ -252,18 +294,25 @@ html, body {
 
 
 
-.block-link{
+/* .block-link{
   height: 100vh;
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 10;
+} */
+
+.block-link:hover > span {
+  text-decoration: underline;
 }
 
 .project-spine .div-name{
     display: block;
     opacity: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 .project-spine .div-name.active{
@@ -280,10 +329,12 @@ html, body {
 }
 }
 
-.div-name{
-  position: absolute;
-}
 
-.block-link{
+
+/* .block-link{
   height: 100%;
+} */
+
+.vertical-lr{
+  writing-mode: vertical-lr;
 }
