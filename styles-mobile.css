@@ -75,7 +75,7 @@
     display: inline-block;
     position: relative;
     width: 95%;
-    height: auto;
+    height: 100%;
     padding:0.5em;
     padding-bottom:2em;
     right: 0rem;
@@ -120,13 +120,13 @@
 
   .all-projects .project-spine.active {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: #000;
     margin:0;
     padding-top:1.5rem;
     padding-bottom: 1.5rem;
     position:relative;
-    z-index:1;
+    z-index:3;
   }
   .project-spine.active .vert{
     display: none;
@@ -184,7 +184,8 @@
     margin:0;
     position:relative;
     z-index:300;
-    filter:drop-shadow(0rem 0px 1.25rem #808080);
+    -webkit-filter:drop-shadow(-2rem 0px 1.25rem #808080);
+    filter:drop-shadow(-2rem 0px 1.25rem #808080);
   }
 
   #first{
@@ -194,7 +195,7 @@
     margin:0;
     position:relative;
     z-index:3;
-    filter:drop-shadow(0rem 0px 1.25rem #808080);
+/*    filter:drop-shadow(0rem 0px 1.25rem #808080)*/;
   }
 
   .all-projects .project-spine-always-active .title-text {
