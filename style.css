@@ -87,7 +87,7 @@ html, body {
   font-size: 2.5rem;
   padding:0;
   font-family:SpaceGrotesk;
-  color:#000;
+  color:#202020;
   text-align: left;
   line-height:1.5;
 }
@@ -130,10 +130,10 @@ html, body {
 }
 
 .project-spine:hover{
-   background-color: #000; 
+   background-color:  #202020; 
 }
 .project-spine:hover .title-text{
-  color: #fff;
+  color: #DCDCDC;
 } 
 
 .all-projects .project-spine.active {
@@ -143,7 +143,7 @@ html, body {
   height: calc(var(--vh, 1vh) * 100);*/
   margin:0;
   pointer-events:none;
-  background-color: #000;
+  background-color: #202020;
 }
 
 .all-projects .project-spine.active .title-text {
@@ -158,7 +158,7 @@ html, body {
   padding-bottom:2rem;
   font-size: 1.5rem;
   line-height:1.3;
-  color: #fff;
+  color: #DCDCDC;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
@@ -173,7 +173,7 @@ html, body {
   word-break: break-word;
   font-size: 1rem;
   font-family:SpaceGrotesk;
-  color: #fff;
+  color: #DCDCDC;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
@@ -188,7 +188,7 @@ html, body {
   word-break: break-word;
   font-size: 1rem;
   font-family:SpaceGrotesk;
-  color: #fff;
+  color: #DCDCDC;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
@@ -204,7 +204,7 @@ html, body {
   word-break: break-word;
   font-size: 1rem;
   font-family:SpaceGrotesk;
-  color: #fff;
+  color: #DCDCDC;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
@@ -251,7 +251,7 @@ html, body {
   padding: 10px;
   font-size: 1.5rem;
   line-height:1.3;
-  color: #000;
+  color: #202020;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
@@ -265,7 +265,7 @@ html, body {
   word-break: break-word;
   font-size: 1rem;
   font-family:SpaceGrotesk;
-  color: #000;
+  color: #202020;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
