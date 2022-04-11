@@ -125,6 +125,8 @@
     margin:0;
     padding-top:1.5rem;
     padding-bottom: 1.5rem;
+    position:relative;
+    z-index:1;
   }
   .project-spine.active .vert{
     display: none;
