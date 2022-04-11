@@ -180,7 +180,7 @@
 
   .all-projects .project-spine-always-active {
     width: 100%;
-    height: 30vh;
+    height: auto;
     background: #DCDCDC;
     margin:0;
     position:relative;
@@ -225,6 +225,7 @@
     -moz-transform: none;
     transform: none;
     padding-left: 10px;
+    padding-bottom:10px;
   }
 
   .all-projects .project-spine-always-active .project-spine-content {
