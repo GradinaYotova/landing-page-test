@@ -238,7 +238,7 @@ height: 4rem;
   filter:drop-shadow(-2rem 0px 1.25rem #808080);
 }
 
-#first {
+/*#first {
   width: 25vw;
   height: 100vh;
   display:inline-block;
@@ -249,7 +249,7 @@ height: 4rem;
   background: #DCDCDC;
   margin:0;
 }
-
+*/
 .all-projects .project-spine-always-active .title-text {
   display:block;
   width:95%;
