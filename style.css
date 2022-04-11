@@ -51,8 +51,7 @@ html, body {
   width:  4rem;
   height: 100vh;
   background: #DCDCDC;
-  -webkit-filter:drop-shadow(-2rem 0px 1.25rem #808080);
-  filter:drop-shadow(-2rem 0px 1.25rem #808080); 
+  box-shadow: -1.40rem 0px 1.25rem #808080;
   cursor: pointer;
 }
 
@@ -227,8 +226,7 @@ html, body {
   height: calc(var(--vh, 1vh) * 100);
   background: #DCDCDC;
   margin:0;
-  -webkit-filter:drop-shadow(-2rem 0px 1.25rem #808080);
-  filter:drop-shadow(-2rem 0px 1.25rem #808080);
+  box-shadow: -1.40rem 0px 1.25rem #808080;
 }
 
 #first {
@@ -238,7 +236,6 @@ html, body {
   position:relative;
   z-index:10;
   vertical-align:bottom;
-  height: calc(var(--vh, 1vh) * 100);
   background: #DCDCDC;
   margin:0;
 }

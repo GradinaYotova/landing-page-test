@@ -7,6 +7,12 @@ $( ".project-spine" ).each(function(index) {
   });
 });
 
+// $( ".project-spine-always-active" ).each(function(index) {
+//   $(this).on("click", function(){
+//     $(this).siblings().removeClass('active');
+//   });
+// });
+
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   
