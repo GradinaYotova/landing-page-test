@@ -210,11 +210,11 @@ html, body {
   pointer-events:auto;
 }
 
-.all-projects .project-spine.active .url:hover {
-  text-decoration:underline;
+.all-projects .project-spine.active .url:hover .url:after {
   pointer-events:auto;
+  content: ' ☛';
+  font-size:0.9em;
 }
-
 
 .all-projects .project-spine-always-active {
   width: 25vw;
