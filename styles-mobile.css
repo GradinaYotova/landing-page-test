@@ -190,8 +190,8 @@
     margin:0;
     position:relative;
     z-index:3;
-    -webkit-filter:drop-shadow(-2rem 0px 1.25rem #808080);
-    filter:drop-shadow(0rem 0px 1.25rem #808080);
+/*    -webkit-filter:drop-shadow(-2rem 0px 1.25rem #808080);
+    filter:drop-shadow(0rem 0px 1.25rem #808080);*/
   }
 
   .all-projects .project-spine-always-active .title-text {
