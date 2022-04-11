@@ -139,8 +139,9 @@ html, body {
 
 .all-projects .project-spine.active {
   width: 25vw;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height:100%;
+/*  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);*/
   margin:0;
   pointer-events:none;
   background-color: #000;
@@ -221,7 +222,7 @@ html, body {
 
 .all-projects .project-spine-always-active {
   width: 25vw;
-  height: 100vh;
+  height: 100%;
   display:inline-block;
   position:relative;
   z-index:100;
@@ -235,7 +236,7 @@ html, body {
 
 #first {
   width: 25vw;
-  height: 100vh;
+  height: 100%;
   display:inline-block;
   position:relative;
   z-index:10;
@@ -284,7 +285,7 @@ html, body {
   margin-right: 0em;
   display: block;
   position: relative;
-  height: auto;
+  height: 100%;
 }
 
 .block-link:hover > span {
