@@ -71,6 +71,16 @@
     right: 0rem;
   }
 
+  .project-spine-content-active {
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    height: auto;
+    padding:0.5em;
+    padding-bottom:2em;
+    right: 0rem;
+  }
+
   .title-text {
     position: relative;
     z-index: 1;

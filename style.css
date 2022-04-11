@@ -69,6 +69,18 @@ html, body {
   top:0;
 }
 
+.project-spine-content-active {
+  display: inline-block;
+  width: 75%;
+  padding:0.5em;
+  margin-left: auto;
+  margin-right: 1.5em;
+  position: relative;
+  height: auto;
+  position: absolute;
+  right: 1rem;
+}
+
 .title-text {
   position: relative;
   z-index: 1;
