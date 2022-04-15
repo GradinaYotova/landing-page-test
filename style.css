@@ -3,10 +3,7 @@
   src: url("fonts/SpaceGrotesk.ttf");
 }
 
-*::-webkit-scrollbar {display: none;}
-* {-ms-overflow-style: none;
-    scrollbar-width: none;
-  -webkit-user-select: none;
+* {-webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -139,12 +136,15 @@ html, body {
 .all-projects .project-spine.active {
   width: 25vw;
   height:100%;
-/*  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);*/
   margin:0;
-  pointer-events:none;
+  pointer-events:active;
   background-color: #202020;
+  overflow-y:scroll !important;
+  -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+.all-projects .project-spine.active::-webkit-scrollbar {display: none;}
 
 .all-projects .project-spine.active .title-text {
   display:block;
@@ -177,6 +177,8 @@ html, body {
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
+  overflow-x:hidden !important;
+  overflow-y:scroll !important;
 }
 
 .all-projects .project-spine.active .student-name {
@@ -210,6 +212,7 @@ html, body {
   transform: none;
   text-decoration:none;
   pointer-events:auto;
+  padding-bottom:0.5rem;
 }
 
 .all-projects .project-spine.active .url:hover .url:after {

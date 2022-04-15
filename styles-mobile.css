@@ -178,6 +178,10 @@
     transform: none;
   }
 
+.all-projects .project-spine.active .url {
+  padding-bottom:0rem;
+}
+
   .all-projects .project-spine-always-active {
     width: 100%;
     height: auto;

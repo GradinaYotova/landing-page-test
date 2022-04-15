@@ -32,7 +32,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         , //true or false - should the marquee be duplicated to show an effect of continues flow
         duplicated: true
         , //speed in milliseconds of the marquee in milliseconds
-        duration: 8000
+        duration: 10000
         , //gap in pixels between the tickers
         gap: 60
         , //on cycle pause the marquee
@@ -62,7 +62,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         , //true or false - should the marquee be duplicated to show an effect of continues flow
         duplicated: true
         , //speed in milliseconds of the marquee in milliseconds
-        duration: 8000
+        duration: 10000
         , //gap in pixels between the tickers
         gap: 60
         , //on cycle pause the marquee
@@ -95,7 +95,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
           , //true or false - should the marquee be duplicated to show an effect of continues flow
           duplicated: true
           , //speed in milliseconds of the marquee in milliseconds
-          duration: 8000
+          duration: 10000
           , //gap in pixels between the tickers
           gap: 500
           , //on cycle pause the marquee
@@ -153,7 +153,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             , //true or false - should the marquee be duplicated to show an effect of continues flow
             duplicated: true
             , //speed in milliseconds of the marquee in milliseconds
-            duration: 8000
+            duration: 10000
             , //gap in pixels between the tickers
             gap: 500
             , //on cycle pause the marquee
